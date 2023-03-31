@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  coarsoft-api:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - type: bind
+        source: ../logs
+        target: /app/logs
+        read_only: false
