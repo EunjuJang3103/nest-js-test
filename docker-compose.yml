@@ -7,6 +7,6 @@ services:
       - "3000:3000"
     volumes:
       - type: bind
-        source: ../logs
+        source: ../.pm2/logs
         target: /app/logs
         read_only: false
